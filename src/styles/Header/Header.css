@@ -1,0 +1,33 @@
+header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+}
+header .active {
+    background-color: yellow;
+    color: black;
+    border-radius: 8px;
+}
+header .active a {
+    padding: 6px 10px;
+}
+nav li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+.logosContain {
+    position: absolute;
+    left: 50px;
+}
+.header-ending {
+    position: absolute;
+    right: 50px;
+}

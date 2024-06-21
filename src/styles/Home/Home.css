@@ -1,0 +1,22 @@
+.home {
+    width: 1900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+.home-info {
+}
+.home-info h1 {
+    font-size: 36px;
+    width: 567px;
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+}
+.home-info p {
+    font-size: 22px;
+    line-height: 50px;
+    width: 590px;
+    font-family: Inter, sans-serif;
+}

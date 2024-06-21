@@ -1,0 +1,135 @@
+.money {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    /* height: 100vh; */
+  }
+  .pay-team {
+    font-size: 34px;
+    margin-top: 20px;
+  }
+  .money input, .money button {
+    
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #D2D1D1;
+    color: #948C8C;
+    border-radius: 5px;
+    font-family: Inter, sans-serif;
+    
+  }
+  
+  .money .select-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  .money .custom-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #D2D1D1;
+    border-radius: 5px;
+    color: #948C8C;
+  }
+  
+  .money .custom-select:hover {
+    border-color: #007BFF;
+  }
+  
+  .money .triangle {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000;
+  }
+  
+  .money .options {
+    position: absolute;
+    top: calc(100% + 5px);
+    max-height: 122px;
+    overflow-y: auto;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc;
+    border-top: none;
+    border-radius: 5px;
+    color: #948C8C;
+    z-index: 20;
+  }
+  
+  .money .option {
+    padding: 10px;
+    cursor: pointer;
+    color: #948C8C;
+  }
+  
+  .money .option:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .money .option.active {
+    border-left: 4px solid #007BFF; /* Добавляем синюю рамку для активного официанта */
+  }
+  
+  .error {
+    color: rgb(251, 255, 39);
+    /* position: absolute; */
+    font-size: 14px;
+    text-align: center;
+    /* bottom: 80px; */
+    /* left: 0; */
+  }
+  
+  .total {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .pay-button {
+    padding: 12px 80px;
+    font-size: 16px;
+    background-color: #fffb00;
+    color: rgb(119, 119, 119);
+    border: none !important;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .pay-button:hover {
+    background-color: #fffb00;
+  }
+  .total-price {
+    color: #39f500;
+  }
+  .total-zero {
+    color: #948C8C;
+  }
+  .pay-select {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* position: absolute; */
+  }
+  @media (max-width: 768px) {
+    .money {
+      margin-top: 60px;
+      max-width: 100%;
+      padding: 0 20px;
+      min-width: 90%;
+
+    }
+    .pay-select {
+        margin-top: 350px;
+    }
+  }
