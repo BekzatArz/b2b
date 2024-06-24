@@ -2,6 +2,7 @@ import React, { useState, ChangeEvent, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import '../styles/Pay/Pay.css';
 import { v4 as uuidv4 } from 'uuid'; // Используем деструктуризацию для импорта v4
+import { useNavigate } from 'react-router-dom';
 
 interface PayState {
   price: string;
@@ -33,7 +34,7 @@ const Pay: React.FC = () => {
   const [total, setTotal] = useState<number>(0);
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [error, setError] = useState<string>('');
-
+  const navigate = useNavigate()
   const selectWrapperRef = useRef<HTMLDivElement>(null);
   const optionsRef = useRef<HTMLDivElement>(null);
 
@@ -83,7 +84,8 @@ const Pay: React.FC = () => {
     }
 
     setError('');
-    console.log('Оплата успешно выполнена', text);
+    navigate('/success')
+    
   };
 
   const waiters = [
@@ -164,7 +166,7 @@ const Pay: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Выбрать способ оплаты
+              Оплатить
             </motion.button>
             </div>
         </div>

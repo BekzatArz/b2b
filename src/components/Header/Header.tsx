@@ -2,10 +2,15 @@ import { NavLink, useLocation } from "react-router-dom"
 
 import human from '../../assets/human.svg'
 import '../../styles/Header/Header.css'
+import { Dispatch, SetStateAction, useEffect } from "react"
 
-const Header = () => {
+const Header:React.FC<{setShowPopup: Dispatch<SetStateAction<boolean>>,onClose: () => void}> = ({setShowPopup, onClose}) => {
     const location = useLocation()
-
+    useEffect(() => {
+      if (location.pathname === '/pay'){
+        setShowPopup(false)
+      }
+    }, [location.pathname])
   return (
     <header style={{display: location.pathname === '/pay' ? 'none' : 'flex'}}>
         <div className="logosContain">
@@ -21,7 +26,7 @@ const Header = () => {
             </ul>
         </nav>
         <div className="header-ending">
-          <img src={human} width={30} alt="profile" />
+          <img className="profile-icon" onClick={onClose} src={human} width={30} alt="profile" />
         </div>
     </header>
   )

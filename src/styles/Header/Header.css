@@ -3,7 +3,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    padding-top: 20px;
     width: 100%;
     position: relative;
 }
@@ -30,4 +30,12 @@ nav ul {
 .header-ending {
     position: absolute;
     right: 50px;
+}
+.profile-icon {
+    transition: .3s;
+}
+.profile-icon:hover{
+    cursor: pointer;
+    transition: .3s;
+    scale: 1.2;
 }
