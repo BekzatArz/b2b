@@ -1,0 +1,19 @@
+.profile {
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+}
+.stars {
+    position: absolute;
+    top: 800px;
+    right: 100px;
+}
+.zav {
+    position: absolute;
+    top: 820px;
+    left: 100px;
+}
+.qr-gen {
+    margin-top: 100px;
+}
