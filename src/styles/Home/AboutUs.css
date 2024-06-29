@@ -1,0 +1,42 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    padding: 30px 50px;
+    background-color: #38393F;
+    border-radius: 6px;
+    max-width: 1400px;
+}
+.about-us h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+.about-us > p {
+    margin-top: 40px;
+    font-family: Inter;
+    font-size: 35px;
+    line-height: 62px;
+    font-weight: 300;
+    width: 1220px;
+    font-weight: 400;
+}
+.about-us__blocks {
+    display: flex;
+    gap: 130px;
+    margin-top: 100px;
+}
+.about-us__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 610px;
+    background-color: #2C2E35;
+    padding: 50px;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+.about-us__block p {
+    font-size: 20px;
+    line-height: 50px;
+}

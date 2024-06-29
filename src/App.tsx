@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound';
 import Pay from './pages/Pay';
 import Popup from './components/Popup/Popup';
 import Success from './pages/Success';
+import Footer from './components/Footer/Footer';
 
 const App: React.FC = () => {
   const [showPopup, setShowPopup] = useState<boolean>(false);
@@ -64,10 +65,11 @@ const App: React.FC = () => {
             <Route path='/pay' element={<Pay />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
+          <Footer />
           <Popup show={showPopup} onClose={togglePopup}>
           <form autoComplete="off">
               <div>
-                <h1>Pay</h1>
+                <h1 style={{color: '#29D728'}}>Pay</h1>
                 <h2>team</h2>
                 {['email', 'password'].map((field) => (
                   <div className="input-container" key={field}>
@@ -97,7 +99,7 @@ const App: React.FC = () => {
               <input type="text" style={{ display: 'none' }} />
               <input type="password" style={{ display: 'none' }} />
               <div>
-                <h1>Pay</h1>
+                <h1 style={{color: '#29D728'}}>Pay</h1>
                 <h2>team</h2>
                 {['zavedenie', 'full_name', 'address', 'email', 'number'].map((field) => (
                   <div className="input-container" key={field}>

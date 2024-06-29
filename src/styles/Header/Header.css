@@ -7,14 +7,6 @@ header {
     width: 100%;
     position: relative;
 }
-header .active {
-    background-color: yellow;
-    color: black;
-    border-radius: 8px;
-}
-header .active a {
-    padding: 6px 10px;
-}
 nav li {
     list-style: none;
 }
@@ -26,6 +18,10 @@ nav ul {
 .logosContain {
     position: absolute;
     left: 50px;
+}
+.logosContain h3 {
+    font-size: 30px;
+    font-weight: 300;
 }
 .header-ending {
     position: absolute;

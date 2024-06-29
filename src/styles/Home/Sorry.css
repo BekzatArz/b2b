@@ -1,0 +1,50 @@
+.sorry {
+    display: flex;
+    padding: 40px;
+    border-radius: 10px;
+    gap: 30px;
+    /* align-items: center; */
+    color: black;
+    margin-top: 100px;
+    background-color: white;
+}
+.sorry-block h1 {
+    font-size: 32px;
+    font-weight: 400;
+    width: 662px;
+}
+.sorry-block button {
+    margin-top: 60px;
+    border: none;
+    background-color: #2C2E35;
+    color: white;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+    padding: 10px 60px;
+    border-radius: 8px;
+    transition: .5s; 
+}
+.sorry-block button:hover {
+    cursor: pointer;
+    transition: .5s;
+    transform: scale(105%);
+}
+.sorry-block p {
+    font-size: 20px;
+    line-height: 24px;
+    width: 640px;
+}
+.checks-cons {
+    display: flex;
+    margin-top: 30px;
+    gap: 14px;
+    align-items: center;
+}
+.checks__p {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.checks__p p {
+    font-size: 17px;
+}

@@ -16,7 +16,7 @@
     padding: 10px;
     font-size: 16px;
     border: 2px solid #D2D1D1;
-    color: #948C8C;
+    /* color: #ffffff;   */
     border-radius: 5px;
     font-family: Inter, sans-serif;
     
@@ -98,8 +98,8 @@
   .pay-button {
     padding: 12px 80px;
     font-size: 16px;
-    background-color: #fffb00;
-    color: rgb(119, 119, 119);
+    background-color: #2AD129;
+    color: white;
     border: none !important;
     border-radius: 5px;
     cursor: pointer;
@@ -107,7 +107,7 @@
   }
   
   .pay-button:hover {
-    background-color: #fffb00;
+    background-color: rgb(45, 240, 45);
   }
   .total-price {
     color: #39f500;

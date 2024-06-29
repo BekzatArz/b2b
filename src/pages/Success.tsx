@@ -1,6 +1,7 @@
 import gopay from '../assets/gopay.png'
 import '../styles/Success/Success.css'
 const Success = () => {
+
   return (
     <div className="success" style={{marginTop: '100px'}}>
         <h2 style={{textAlign: 'center', fontWeight: 200}}>Оплатить:</h2>
